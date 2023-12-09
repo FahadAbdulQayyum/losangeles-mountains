@@ -30,8 +30,19 @@
       }
       .carousel-slide {
         /* flex: 0 0 100%; */
-        flex: 0 0 50%; /* Show two slides at a time */
+        flex: 0 0 50%;
+        /* flex: 0 25% 50%; */
+        /* flex: 0 0 50%; */
         max-width: 25%;
+        margin: 0 5px;
+
+        overflow: hidden;
+        height: 200px;
+        width: 100px;
+      }
+      .carousel-slide img {
+        height: 100%;
+        width: 100%;
       }
     </style>
   </head>
@@ -78,7 +89,7 @@
       </nav>
     </div>
     <div
-      class="bg-cover bg-center h-screen relative"
+      class="bg-cover bg-center h-screen relative overflow-hidden"
       style="background-image: url('../src/images/histimg.jpg')"
     >
       <!-- <div
@@ -109,106 +120,142 @@
           </div>
         </div>
       </div>
-      <div class="absolute bottom-0 left-0 w-full">
-        <!-- <img src="../src/images/Logo.png" /> -->
-        <div class="w-full max-w-screen-xl mx-auto">
-          <div class="carousel relative">
-            <!-- <div class="carousel-inner flex"> -->
-            <div class="carousel-inner" id="carouselInner">
-              <!-- Carousel items -->
+      <div>
+      <!-- <div class="absolute -bottom-12 left-0 w-full bg-slate-800 bg-opacity-50"> -->
+      <div class="absolute bottom-7 left-0 w-full bg-slate-800 bg-opacity-50">
+      <!-- <div class="absolute bottom-0 w-full bg-slate-400 "> -->
+      <!-- <img src="../src/images/Logo.png" /> -->
+      <div class="max-w-screen-xl m-auto mt-10">
+        <!-- <div class="w-full max-w-screen-xl mx-auto "> -->
+        <div class="carousel relative">
+          <div class="carousel-inner" id="carouselInner">
+            <!-- Width will be dynamically set -->
+            <!-- Carousel items -->
+            <div class="carousel-slide">
+              <img
+                src="../src/images/catherine-verrecchia-I9cNDmLuRpQ-unsplash.jpg"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="../src/images/climbimg.jpg"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+              src="../src/images/david-gavi-Ijx8OxvKrgM-unsplash.jpg"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+              src="../src/images/gaurav-k-CV7KPRM6fHc-unsplash.jpg"
+                alt="Slide 4"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+              src="../src/images/matt-palmer-gH87M53-XNI-unsplash.jpg"
+                alt="Slide 5"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+              src="../src/images/ophelie-authier-X0SMdQSQwzc-unsplash.jpg"
+                alt="Slide 6"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+              src="../src/images/catherine-verrecchia-I9cNDmLuRpQ-unsplash.jpg"              
+                alt="Slide 7"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+              src="../src/images/climbimg.jpg"
+                alt="Slide 8"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300/00BBFF/FFFFFF"
+                alt="Slide 9"
+              />
+            </div>
+            <div class="carousel-slide">
+              <img
+                src="https://via.placeholder.com/600x300/FFFFAA/FFFFFF"
+                alt="Slide 10"
+              />
               <div class="carousel-slide">
                 <img
-                  src="https://via.placeholder.com/600x300/FF0000/FFFFFF"
-                  alt="Slide 1"
+                  src="https://via.placeholder.com/600x300/00CCFF/FFFFFF"
+                  alt="Slide 11"
                 />
               </div>
               <div class="carousel-slide">
                 <img
-                  src="https://via.placeholder.com/600x300/00FF00/FFFFFF"
-                  alt="Slide 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/0000FF/FFFFFF"
-                  alt="Slide 3"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/00FF00/FFFFFF"
-                  alt="Slide 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/FF0000/FFFFFF"
-                  alt="Slide 1"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/00FF00/FFFFFF"
-                  alt="Slide 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/0000FF/FFFFFF"
-                  alt="Slide 3"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/00FF00/FFFFFF"
-                  alt="Slide 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/FF0000/FFFFFF"
-                  alt="Slide 1"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/00FF00/FFFFFF"
-                  alt="Slide 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/0000FF/FFFFFF"
-                  alt="Slide 3"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://via.placeholder.com/600x300/00FF00/FFFFFF"
-                  alt="Slide 2"
+                  src="https://via.placeholder.com/600x300/FFFFCC/FFFFFF"
+                  alt="Slide 12"
                 />
               </div>
             </div>
           </div>
-        </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+  <nav
+    class="flex flex-row items-center justify-around text-slate-500 py-3"
+  >
+  <div class="flex justify-center items-center">
+    <div class="flex w-[80%] -space-y-8 items-center">
+      <div class="flex relative">
+        <h1
+          class="text-[100px] font-['anton'] text-gray-300 tracking-wider"
+        >
+          02.
+        </h1>
+        <p
+          class="text-[35px] font-['anton'] uppercase text-slate-700 absolute left-[110px] top-[55px] "
+        >
+          Climb
+        </p>
       </div>
-    </div>
+      <div class="flex justify-end">
+        <p class="w-[90%]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          modi minus quisquam corporis ullam praesentium similique dolores
+          provident illo sapiente, blanditiis commodi rem temporibus nemo
+          veritatis natus vel nobis doloremque.
+        </p>
+  </div>
+  </nav>
+  <div class="bg-slate-600">
+    <h1>Mountain 1</h1>
+    <h1>Mountain 2</h1>
+  </div>
     <script>
       // JavaScript for carousel functionality
-      const carousel = document.querySelector(".carousel-inner");
+      const carousel = document.getElementById("carouselInner");
       const slides = document.querySelectorAll(".carousel-slide");
-      let currentIndex = 0;
+      let currentIndex = 6;
 
       function goToSlide(index) {
-        carousel.style.transform = `translateX(-${index * 100}%)`;
-        // carousel.style.transform = `translateX(-${
-        //   index * (100 / slides.length)
-        // }%)`;
+        carousel.style.transform = `translateX(-${
+          index * (100 / slides.length)
+        }%)`;
         currentIndex = index;
       }
 
       setInterval(() => {
-        currentIndex = (currentIndex + 1) % slides.length;
+        // currentIndex = (currentIndex + 1) % slides.length;
+        currentIndex = (currentIndex + 3) % slides.length;
+        // currentIndex = (currentIndex + 9) % slides.length;
         goToSlide(currentIndex);
       }, 3000); // Change slides every 3 seconds
     </script>
