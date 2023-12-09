@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="Stylesheet" href="../styles/tailwind.css" /> -->
     <link rel="Stylesheet" href="../styles/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
@@ -20,7 +19,6 @@
       defer
     ></script>
     <style>
-      /* Style adjustments */
       .carousel {
         overflow: hidden;
       }
@@ -29,15 +27,12 @@
         transition: transform 0.3s ease;
       }
       .carousel-slide {
-        /* flex: 0 0 100%; */
         flex: 0 0 50%;
-        /* flex: 0 25% 50%; */
-        /* flex: 0 0 50%; */
         max-width: 25%;
         margin: 0 5px;
 
         overflow: hidden;
-        height: 200px;
+        height: 100px;
         width: 100px;
       }
       .carousel-slide img {
@@ -47,13 +42,14 @@
     </style>
   </head>
   <body>
-    <div
+    <!-- <div
       class="bg-cover bg-center h-screen"
-      style="background-image: url('../src/images/hero.png')"
+      style="background-image: url('../src/images/indeximg.jpg')"
+    > -->
+    <div
+      class="bg-cover h-screen bg-top"
+      style="background-image: url('../src/images/indeximg.jpg')"
     >
-      <!-- <nav
-        class="bg-slate-500 flex flex-row items-center justify-around text-white py-3"
-      > -->
       <nav class="flex flex-row items-center justify-around text-white py-3">
         <div>
           <img src="../src/images/Logo.png" />
@@ -74,7 +70,6 @@
           <span class="border rounded-full"
             ><img src="../src/images/Logo.png" />
           </span>
-          <!-- <span class="text-lg text-slate-500 font-bold uppercase -space-y-3"> -->
           <span class="text-lg text-slate-500 font-bold uppercase -space-y-3.5">
             <h1>Losangeles</h1>
             <h1>Mountains</h1>
@@ -92,10 +87,6 @@
       class="bg-cover bg-center h-screen relative overflow-hidden"
       style="background-image: url('../src/images/histimg.jpg')"
     >
-      <!-- <div
-        class="bg-cover h-screen bg-no-repeat"
-        style="background-image: url('../src/images/histimg.jpg')"
-      > -->
       <div class="flex justify-center items-center">
         <div class="flex flex-col w-[65%] -space-y-8">
           <div class="flex relative">
@@ -121,16 +112,10 @@
         </div>
       </div>
       <div>
-      <!-- <div class="absolute -bottom-12 left-0 w-full bg-slate-800 bg-opacity-50"> -->
-      <div class="absolute bottom-7 left-0 w-full bg-slate-800 bg-opacity-50">
-      <!-- <div class="absolute bottom-0 w-full bg-slate-400 "> -->
-      <!-- <img src="../src/images/Logo.png" /> -->
-      <div class="max-w-screen-xl m-auto mt-10">
-        <!-- <div class="w-full max-w-screen-xl mx-auto "> -->
+      <div class="absolute bottom-0 left-0 w-full bg-slate-800 bg-opacity-80">
+      <div class="max-w-screen-xl m-auto py-8 w-[60%]">
         <div class="carousel relative">
           <div class="carousel-inner" id="carouselInner">
-            <!-- Width will be dynamically set -->
-            <!-- Carousel items -->
             <div class="carousel-slide">
               <img
                 src="../src/images/catherine-verrecchia-I9cNDmLuRpQ-unsplash.jpg"
@@ -204,8 +189,13 @@
               </div>
             </div>
           </div>
-          </div>
-          </div>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-6">
+        <p class="text-white items-center text-5xl bottom-5">.</p>
+        <p class="text-white items-center text-5xl bottom-5">.</p>
+        <p class="text-white items-center text-5xl bottom-5">.</p>
+      </div>  
           </div>
           </div>
           </div>
@@ -244,15 +234,9 @@
       <h1 class="text-slate-200 px-5 py-2 font-bold uppercase text-2xl"><p class="border-b-[1px] border-slate-200">Mountain 2</p></h1>
     </div>
   </div>
-  <!-- <div
-  class="absolute top-40 left-64 bg-white w-96 h-72"
-  > -->
   <div
   class="absolute top-40 left-64 bg-white bg-opacity-70 w-86 h-60"
   >
-<!-- <div
-class="p-10"
-> -->
 <div
 class="p-5 px-10"
 >
@@ -273,7 +257,6 @@ class="p-5 px-10"
     <span class="border rounded-full"
       ><img src="../src/images/Logo.png" />
     </span>
-    <!-- <span class="text-lg text-slate-500 font-bold uppercase -space-y-3"> -->
     <span class="text-lg text-slate-500 font-bold uppercase -space-y-3.5">
       <h1>Losangeles</h1>
       <h1>Mountains</h1>
@@ -286,7 +269,6 @@ class="p-5 px-10"
   </div>
 </nav>
     <script>
-      // JavaScript for carousel functionality
       const carousel = document.getElementById("carouselInner");
       const slides = document.querySelectorAll(".carousel-slide");
       let currentIndex = 6;
@@ -299,9 +281,7 @@ class="p-5 px-10"
       }
 
       setInterval(() => {
-        // currentIndex = (currentIndex + 1) % slides.length;
         currentIndex = (currentIndex + 3) % slides.length;
-        // currentIndex = (currentIndex + 9) % slides.length;
         goToSlide(currentIndex);
       }, 3000); // Change slides every 3 seconds
     </script>
