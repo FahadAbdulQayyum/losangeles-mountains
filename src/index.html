@@ -191,11 +191,19 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center space-x-6">
-        <p class="text-white items-center text-5xl bottom-5">.</p>
-        <p class="text-white items-center text-5xl bottom-5">.</p>
-        <p class="text-white items-center text-5xl bottom-5">.</p>
-      </div>  
+      <div
+      class="flex justify-center text-8xl text-white relative"
+      >
+      <div
+      class="absolute bottom-0"
+      >
+        <!-- Previous Button -->
+  <button onclick="prevSlide()" class="carousel-btn items-center">.</button>
+  
+  <!-- Next Button -->
+  <button onclick="nextSlide()" class="carousel-btn items-center">.</button>
+      </div>
+      </div>
           </div>
           </div>
           </div>
@@ -279,6 +287,16 @@ class="p-5 px-10"
         }%)`;
         currentIndex = index;
       }
+
+      function nextSlide() {
+  currentIndex = (currentIndex + 6) % slides.length;
+  goToSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 6 + slides.length) % slides.length;
+  goToSlide(currentIndex);
+}
 
       setInterval(() => {
         currentIndex = (currentIndex + 3) % slides.length;
