@@ -8,6 +8,13 @@ module.exports = {
       // sans: ['Anton', 'sans-serif'],
       'anton': ['Anton', 'sans-serif'],
     },
+    screens: {
+      'xs': '400px', // Set 'xs' to 400px
+      'sm': '500px', // Set 'sm' to 500px
+      'md': '768px',
+      'lg': '976px',
+      'xl': '1440px',
+    },
     extend: {},
   },
   plugins: [],
