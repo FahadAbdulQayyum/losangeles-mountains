@@ -885,6 +885,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[6px\] {
+  font-size: 6px;
+}
+
 .font-bold {
   font-weight: 700;
 }
