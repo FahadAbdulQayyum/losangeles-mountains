@@ -9,6 +9,7 @@ module.exports = {
       'anton': ['Anton', 'sans-serif'],
     },
     screens: {
+      'xxs': '350px', // Set 'xs' to 400px
       'xs': '400px', // Set 'xs' to 400px
       'sm': '500px', // Set 'sm' to 500px
       'md': '768px',

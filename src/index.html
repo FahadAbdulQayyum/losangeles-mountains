@@ -39,6 +39,30 @@
         height: 100%;
         width: 100%;
       }
+      @media screen and (max-width: 768px) {
+      .carousel-slide {
+        flex: 0 0 50%;
+        max-width: 50%; /* Change width to 50% for smaller screens */
+        margin: 0 5px;
+
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+      @media screen and (max-width: 500px) {
+      .carousel-slide {
+        flex: 0 0 50%;
+        /* max-width: 500px;  */
+        max-width: 500px; /* Change width to 50% for smaller screens */
+        margin: 0 5px;
+
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+      }
+    }
     </style>
   </head>
   <body>
@@ -61,15 +85,6 @@
             <a class="border-b-[1px] md:w-16 lg:w-20 block text-end lg:text-center">02. Team</a>
           </div>
         </div>
-
-        <!-- <div class="flex justify-between font-oswald font-bold italic uppercase text-xs flex-col">
-          <button id="toggleButton" class="block md:hidden border border-gray-500 px-2 py-1 rounded">Toggle</button>
-        
-          <div id="navigationLinks" class="w-72 md:w-60 md:justify-between space-x-8 lg:space-x-16 hidden md:flex absolute top-16 sm:relative sm:top-0">
-            <a class="border-b-[1px] md:w-20 lg:w-24 block text-center">01. History</a>
-            <a class="border-b-[1px] md:w-16 lg:w-20 block text-center">02. Team</a>
-          </div>
-        </div> -->
       </nav>
     </div>
     <div>
@@ -95,12 +110,6 @@
             <a class="border-b-[1px] md:w-16 lg:w-20 block text-end lg:text-center">02. Team</a>
           </div>
         </div>
-        <!-- <div
-          class="w-52 flex justify-between font-oswald font-bold italic uppercase text-xs"
-        >
-          <a class="border-b-[1px] w-[36%] border-slate-500">01. History</a>
-          <a class="border-b-[1px] w-[28%] border-slate-500">02. Team</a>
-        </div> -->
       </nav>
     </div>
     <div
@@ -133,7 +142,7 @@
       </div>
       <div>
       <div class="absolute bottom-0 left-0 w-full bg-slate-800 bg-opacity-80">
-      <div class="max-w-screen-xl m-auto py-8 w-[60%]">
+      <div class="max-w-screen-xl m-auto py-8 w-[95%] md:w-[65%] sm:w-[85%]">
         <div class="carousel relative">
           <div class="carousel-inner" id="carouselInner">
             <div class="carousel-slide">
@@ -142,66 +151,66 @@
                 alt="Slide 1"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
                 src="../src/images/climbimg.jpg"
                 alt="Slide 2"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
               src="../src/images/david-gavi-Ijx8OxvKrgM-unsplash.jpg"
                 alt="Slide 3"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
               src="../src/images/gaurav-k-CV7KPRM6fHc-unsplash.jpg"
                 alt="Slide 4"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
               src="../src/images/matt-palmer-gH87M53-XNI-unsplash.jpg"
                 alt="Slide 5"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
               src="../src/images/ophelie-authier-X0SMdQSQwzc-unsplash.jpg"
                 alt="Slide 6"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
               src="../src/images/catherine-verrecchia-I9cNDmLuRpQ-unsplash.jpg"              
                 alt="Slide 7"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
               src="../src/images/climbimg.jpg"
                 alt="Slide 8"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
                 src="https://via.placeholder.com/600x300/00BBFF/FFFFFF"
                 alt="Slide 9"
               />
             </div>
-            <div class="carousel-slide">
+            <div class="carousel-slide ">
               <img
                 src="https://via.placeholder.com/600x300/FFFFAA/FFFFFF"
                 alt="Slide 10"
               />
-              <div class="carousel-slide">
+              <div class="carousel-slide ">
                 <img
                   src="https://via.placeholder.com/600x300/00CCFF/FFFFFF"
                   alt="Slide 11"
                 />
               </div>
-              <div class="carousel-slide">
+              <div class="carousel-slide ">
                 <img
                   src="https://via.placeholder.com/600x300/FFFFCC/FFFFFF"
                   alt="Slide 12"
@@ -245,11 +254,7 @@
         </p>
       </div>
       <div class="flex justify-end self-end sm:self-auto">
-        <!-- <p class="w-[90%] sm:w-[70%]"> -->
-        <!-- <p class="sm:bg-red-500 w-[90%]"> -->
-        <!-- <p class="sm:ml-16 sm:text-sm w-[90%]"> -->
         <p class="ml-16 text-sm sm:text-base w-[90%] self-end mt-5">
-        <!-- <p class="w-[90%] lg:bg-red-700"> -->
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
           modi minus quisquam corporis ullam praesentium similique dolores
           provident illo sapiente, blanditiis commodi rem temporibus nemo
@@ -267,7 +272,7 @@
     </div>
   </div>
   <div
-  class="absolute top-40 left-64 bg-white bg-opacity-70 w-86 h-60"
+  class="absolute top-40 left-11 sm:top-40 sm:left-64 bg-white bg-opacity-70 w-86 h-60"
   >
 <div
 class="p-5 px-10"
@@ -289,13 +294,13 @@ class="p-5 px-10"
     <span class="border rounded-full"
       ><img src="../src/images/Logo.png" />
     </span>
-    <span class="text-lg text-slate-500 font-bold uppercase -space-y-3.5">
+    <span class="text-sm sm:text-lg text-slate-500 font-bold uppercase -space-y-3.5">
       <h1>Losangeles</h1>
       <h1>Mountains</h1>
     </span>
   </div>
   <div
-    class="flex justify-between font-oswald font-bold italic uppercase text-xs"
+    class="flex justify-between font-oswald font-bold italic uppercase text-[8px] xxs:text-[12px] sm:text-lg"
   >
     <a class="uppercase">Copyright 2016. All Rights reserverd</a>
   </div>
@@ -337,7 +342,6 @@ function prevSlide() {
     var navLinks = document.getElementById('navigationLinks1');
     navLinks.classList.toggle('hidden');
   });
-
     </script>
   </body>
 </html>
